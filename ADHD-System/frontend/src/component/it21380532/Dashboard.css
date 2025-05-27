@@ -1,0 +1,109 @@
+/* Global Styles */
+.dashboardprediction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  padding: 20px;
+}
+
+.dashboardprediction::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("./image/ruj7_fdbd_220311.jpg") no-repeat center center fixed;
+  background-size: cover;
+  opacity: 0.4;
+  z-index: -1;
+}
+
+/* Header */
+.dashboardprediction h1 {
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+  position: relative;
+  z-index: 1;
+}
+
+/* Prediction Card */
+.prediction-card {
+  width: 80%;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.prediction-card h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.prediction-card button {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.prediction-card button:hover {
+  background-color: #0056b3;
+}
+
+/* Charts Section */
+.charts-section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 20px;
+  gap: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Chart Container - One Chart Per Row */
+.chart-container {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 90%;
+}
+
+.chart-container h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .prediction-card {
+    width: 90%;
+  }
+
+  .charts-section {
+    width: 100%;
+    max-width: 600px;
+  }
+
+  .chart-container {
+    width: 90%;
+  }
+}
