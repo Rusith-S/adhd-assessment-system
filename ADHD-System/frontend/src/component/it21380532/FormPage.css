@@ -1,0 +1,113 @@
+/* Page Container */
+.containeform {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensures full viewport height */
+    width: 100%;
+    padding: 20px;
+    background: url('./image/ruj7_fdbd_220311.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Card Styling */
+.cardform {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px; /* Ensures proper width */
+}
+
+/* Header Styling */
+.cardform-header {
+    background: #007bff;
+    color: white;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 8px 8px 0 0;
+}
+
+/* Form Groups */
+.form-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Label Styling */
+.form-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Input & Select Fields */
+.form-control {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    transition: border 0.3s ease-in-out;
+    background-color: #fff;
+}
+
+/* Focus Effect */
+.form-control:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0px 0px 5px rgba(0, 123, 255, 0.25);
+}
+
+/* Error Messages */
+.invalid-feedback {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/* Fix for Select Dropdown Appearance */
+select.form-control {
+    appearance: none; /* Removes default browser styling */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding-right: 30px; /* Ensures proper padding */
+    background: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4 5"><path fill="black" d="M2 0L0 2h4z"/></svg>') no-repeat right 10px center;
+    background-size: 10px;
+    padding: 0;
+    padding-left: 10px;
+}
+
+/* Submit Button */
+.btn-primarypre {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+    margin-top: 15px;
+}
+
+.btn-primarypre:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .card {
+        width: 90%; /* Adjust width for smaller screens */
+    }
+
+    .form-group {
+        flex-direction: column;
+    }
+}
